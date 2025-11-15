@@ -5,9 +5,10 @@ pipeline {
   }
 
   stages {
-        stage('Test') {
-            steps {
-                echo "Running on Windows Node"
-                  }
-                      }
+    stage('Test') {
+      steps {
+        sh 'docker version'
+      }
+    }
+  }
   }
